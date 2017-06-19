@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Welcome to the Space application</h1>
+    <p>
+        The International Space Station is moving at close to 28,000 km/h so its location changes really fast! Where is it right now?
+    </p>
+
+    <button class="btn btn-primary" (click)="issLocation()"> Lat Long </button>
+    <button class="btn btn-primary" (click)="numberOfPeople()"> People </button>
+    <button class="btn btn-primary" (click)="showInMap()"> See Location in Google Maps </button>
+    <div *ngIf="location">
+        {{location.iss_position.latitude}} {{location.iss_position.longitude}}
+    </div>
+    <div *ngIf="people">
+        <p> People in space {{people.number}}</p>
+    </div>
+
+    <agm-map *ngIf="showMap" [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+</div>

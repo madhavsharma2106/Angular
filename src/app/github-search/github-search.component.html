@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Enter the user you want to search</p>
+    <input type="text" #searchBox id="searchBox">
+    <button class="btn btn-primary" (click)=getUsers(searchBox.value)>Search</button>
+
+    <div *ngIf="users" class="row">
+        <div *ngFor="let user of users.items" class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="{{user.avatar_url}}" alt="Profile Image">
+                <div class="caption">
+                    <h3>{{user.name}}</h3>
+                    <p class="text-center"><a class="btn btn-primary" role="button" (click)="showDetail(user)">View Profile</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
