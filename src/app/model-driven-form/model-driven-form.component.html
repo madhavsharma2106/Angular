@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>User Data</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input #refName type="text" class="form-control" formControlName="name"> {{refName.className}}
+        </div>
+        <div class="alert alert-danger" *ngIf="userForm.controls['name'].hasError('required')">
+            Please enter a name
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" formControlName="email">
+        </div>
+        <div formGroupName="address">
+            <div class="form-group">
+                <label>Street</label>
+                <input type="text" class="form-control" formControlName="street">
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" class="form-control" formControlName="city">
+            </div>
+            <div class="form-group">
+                <label>Postal Code</label>
+                <input type="text" class="form-control" formControlName="postalCode">
+            </div>
+            <div class="alert alert-danger" *ngIf="userForm.controls['address'].controls['postalCode'].hasError('minLength')">
+                The Pincode must contain atleast 4 chars.
+            </div>
+        </div>
+        <button class="btn btn-primary" [disabled]='!userForm.valid' type="submit">Submit</button>
+    </form>
+</div>

@@ -1,7 +1,7 @@
 <div class="container">
     <p>Enter the user you want to search</p>
     <input type="text" #searchBox id="searchBox">
-    <button class="btn btn-primary" (click)=getUsers(searchBox.value)>Search</button>
+    <button class="btn btn-primary" (click)=getUsers(searchBox.value) type="submit">Search</button>
 
     <div *ngIf="users" class="row">
         <div *ngFor="let user of users.items" class="col-sm-6 col-md-3">
