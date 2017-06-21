@@ -22,5 +22,9 @@ constructor( private formBuilder: FormBuilder) { }
                     })
       });
   }
+    
+    onSubmit(){
+    console.log(this.userForm.value);
+}
 
 }

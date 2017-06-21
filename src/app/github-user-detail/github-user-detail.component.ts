@@ -21,6 +21,7 @@ constructor( private githubService: GithubService, private activatedRoute: Activ
             this.user = res;
             console.log(this.user);
         }
+      
     ); 
   }
 

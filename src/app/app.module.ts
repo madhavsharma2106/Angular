@@ -19,6 +19,7 @@ import { GithubUserDetailComponent } from './github-user-detail/github-user-deta
 import { FormComponent } from './form/form.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 import { MdfFormBuilderComponent } from './mdf-form-builder/mdf-form-builder.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MdfFormBuilderComponent } from './mdf-form-builder/mdf-form-builder.com
     GithubUserDetailComponent,
     FormComponent,
     ModelDrivenFormComponent,
-    MdfFormBuilderComponent
+    MdfFormBuilderComponent,
+    TemplateDrivenFormComponent
     ],
   imports: [
     BrowserModule,

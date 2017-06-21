@@ -1,41 +1,9 @@
 <div class="container">
-    <h2>Used Data</h2>
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
-        <div class="form-group">
-            <label>Name</label>
-            <input #nameRef='ngModel' #v required type="text" class="form-control" name="name" ngModel> {{v.className}}
-            <div class="alert alert-danger" [hidden]="nameRef.valid || nameRef.pristine">
-                Please enter a name
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email" ngModel>
-        </div>
-        <div ngModelGroup="address">
-            <div class="form-group">
-                <label>Street</label>
-                <input type="text" class="form-control" name="street" ngModel>
-            </div>
-            <div class="form-group">
-                <label>City</label>
-                <input type="text" class="form-control" name="city" ngModel>
-            </div>
-            <div class="form-group">
-                <label>Postal Code</label>
-                <input type="text" #postalCode="ngModel" required minlength="6" class="form-control" name="postalCode" ngModel>
-            </div>
-            <div class="alert alert-danger" *ngIf="postalCode.errors && (postalCode.dirty || postalCode.touched)">
-                <div [hidden]="!postalCode.errors.required">
-                    Please enter enter the Pincode
-                </div>
-                <div [hidden]="!postalCode.errors.minlength">
-                    Please enter enter atleast 6 digits
-                </div>
-
-            </div>
-        </div>
-        <button [disabled]="userForm.invalid" type="submit" class="btn btn-primary"> Submit</button>
-    </form>
+    <h1 class="text-center">Select any form</h1>
+    <div class="text-center">
+        <button class="btn btn-primary" routerLink="./template-driven-form" routerLinkActive="active">Template Driven Forms</button>
+        <button class="btn btn-primary" routerLink="./model-driven-form" routerLinkActive="active">Model Driven Forms</button>
+        <button class="btn btn-primary" routerLink="./mdf-form-builder" routerLinkActive="active">Model Driven Forms using Form Builder</button>
+    </div>
+    <router-outlet></router-outlet>
 </div>
