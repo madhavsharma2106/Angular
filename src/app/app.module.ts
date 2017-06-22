@@ -20,6 +20,9 @@ import { FormComponent } from './form/form.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 import { MdfFormBuilderComponent } from './mdf-form-builder/mdf-form-builder.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { InputOutputComponent } from './input-output/input-output.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     FormComponent,
     ModelDrivenFormComponent,
     MdfFormBuilderComponent,
-    TemplateDrivenFormComponent
+    TemplateDrivenFormComponent,
+    LifecycleHooksComponent,
+    InputOutputComponent,
+    ChildComponent
     ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 export class GithubService {
 
   constructor( 
-private http: Http
+    private http: Http
   ) { }
     
 getUsers(value): Observable <any>{

@@ -9,6 +9,9 @@ import { FormComponent } from '../form/form.component';
 import { TemplateDrivenFormComponent } from '../template-driven-form/template-driven-form.component';
 import { ModelDrivenFormComponent } from '../model-driven-form/model-driven-form.component';
 import { MdfFormBuilderComponent } from '../mdf-form-builder/mdf-form-builder.component';
+import { LifecycleHooksComponent } from '../lifecycle-hooks/lifecycle-hooks.component';
+import { InputOutputComponent } from '../input-output/input-output.component';
+
 
 const routes: Routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -22,7 +25,9 @@ const routes: Routes = [
             { path: 'model-driven-form',  component: ModelDrivenFormComponent },
             { path: 'mdf-form-builder',  component: MdfFormBuilderComponent },  
         ]
-    },    
+    },
+    { path: 'lifecycle-hooks',  component: LifecycleHooksComponent },
+    { path: 'input-output',  component: InputOutputComponent },
 ];
 
 

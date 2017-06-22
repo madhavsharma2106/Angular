@@ -1,0 +1,8 @@
+<div class="container">
+    <h1>Parent Component</h1>
+    <label> The Parent Component Value is : </label>
+    <input type="text" #ptext (keyup)='0'>
+    <br>
+    <p>The Value from the Child Component is: {{childData}}</p>
+    <app-child (childEvent)="childData = $event" [parentData]="ptext.value"></app-child>
+</div>

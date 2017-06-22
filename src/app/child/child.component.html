@@ -1,0 +1,7 @@
+<div>
+    <h1>Child Component</h1>
+    <label> The Child Component Value is : </label>
+    <input type="text" #childData (keyup)="onChange(childData.value)">
+    <br>
+    <p>The Value from the Parent Component is:{{parentData}} </p>
+</div>
