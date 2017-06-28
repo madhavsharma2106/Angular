@@ -23,6 +23,7 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { ChildComponent } from './child/child.component';
+import { TwitterappComponent } from './twitterapp/twitterapp.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ChildComponent } from './child/child.component';
     TemplateDrivenFormComponent,
     LifecycleHooksComponent,
     InputOutputComponent,
-    ChildComponent
+    ChildComponent,
+    TwitterappComponent
     ],
   imports: [
     BrowserModule,

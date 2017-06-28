@@ -1,0 +1,28 @@
+<div class="container">
+    <p *ngIf="!authDone">Don't Forget to Authorize before you proceed.</p>
+    <p *ngIf="authDone">Done. Feel free to search anything.</p>
+
+    <button *ngIf="!authDone" (click)="makeCall()">Authorize</button>
+    <input type="text" [(ngModel)]="searchQuery">
+    <button (click)="searchCall()">Search</button>
+</div>
+
+<div class="container">
+    <div *ngFor="let tweet of tweetsData">
+        <div class="row">
+
+            <div class=" col-sm-8">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <img src="{{tweet.user.profile_image_url}}" alt="Profile Image">
+                    </div>
+                    <div class="col-xs-11">
+                        <h2>{{tweet.user.name}}</h2>
+                    </div>
+                </div>
+                <p>{{tweet.text}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
