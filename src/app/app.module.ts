@@ -25,12 +25,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { ChildComponent } from './child/child.component';
-<<<<<<< HEAD
 import { TwitterComponent } from './twitter/twitter.component';
 import { ChartsComponent } from './charts/charts.component';
-=======
-import { TwitterappComponent } from './twitterapp/twitterapp.component';
->>>>>>> 7a0be00c75931275564233ee41c51920fdbbe36f
 
 @NgModule({
   declarations: [
@@ -47,12 +43,8 @@ import { TwitterappComponent } from './twitterapp/twitterapp.component';
     LifecycleHooksComponent,
     InputOutputComponent,
     ChildComponent,
-<<<<<<< HEAD
     TwitterComponent,
     ChartsComponent
-=======
-    TwitterappComponent
->>>>>>> 7a0be00c75931275564233ee41c51920fdbbe36f
     ],
   imports: [
     BrowserModule,
