@@ -12,6 +12,7 @@ import { MdfFormBuilderComponent } from '../mdf-form-builder/mdf-form-builder.co
 import { LifecycleHooksComponent } from '../lifecycle-hooks/lifecycle-hooks.component';
 import { InputOutputComponent } from '../input-output/input-output.component';
 import { TwitterComponent } from '../twitter/twitter.component';
+import { CalendarComponent } from '../calendar/calendar.component';
 import { ChartsComponent } from '../charts/charts.component';
 
 
@@ -32,6 +33,7 @@ const routes: Routes = [
     { path: 'lifecycle-hooks',  component: LifecycleHooksComponent },
     { path: 'input-output',  component: InputOutputComponent },
     { path: 'twitter',  component: TwitterComponent },
+    { path: 'calendar',  component: CalendarComponent },
 ];
 
 

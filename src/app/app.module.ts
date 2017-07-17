@@ -27,6 +27,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { ChildComponent } from './child/child.component';
 import { TwitterComponent } from './twitter/twitter.component';
 import { ChartsComponent } from './charts/charts.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ChartsComponent } from './charts/charts.component';
     InputOutputComponent,
     ChildComponent,
     TwitterComponent,
-    ChartsComponent
+    ChartsComponent,
+    CalendarComponent
     ],
   imports: [
     BrowserModule,
