@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpModule }    from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 import { FormsModule }   from '@angular/forms';
-import { ReactiveFormsModule }   from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -23,6 +25,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { ChildComponent } from './child/child.component';
+import { TwitterComponent } from './twitter/twitter.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,9 @@ import { ChildComponent } from './child/child.component';
     TemplateDrivenFormComponent,
     LifecycleHooksComponent,
     InputOutputComponent,
-    ChildComponent
+    ChildComponent,
+    TwitterComponent,
+    ChartsComponent
     ],
   imports: [
     BrowserModule,
@@ -49,6 +55,7 @@ import { ChildComponent } from './child/child.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD9K-4fMGSKbkWVxkLBUhBuo9kuedjwoAc'
     }),
+    ChartsModule
   ],
   providers: [
     IssService,
