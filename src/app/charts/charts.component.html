@@ -6,6 +6,8 @@
     [labels]="doughnutChartLabels" 
     [chartType]="doughnutChartType" 
     (chartHover)="chartHovered($event)"
+    [colors]="bgColor"
+    [options]="options"
     (chartClick)="chartClicked($event)">
   </canvas>
   </div>
