@@ -11,8 +11,12 @@ import { ModelDrivenFormComponent } from '../model-driven-form/model-driven-form
 import { MdfFormBuilderComponent } from '../mdf-form-builder/mdf-form-builder.component';
 import { LifecycleHooksComponent } from '../lifecycle-hooks/lifecycle-hooks.component';
 import { InputOutputComponent } from '../input-output/input-output.component';
+<<<<<<< HEAD
 import { TwitterComponent } from '../twitter/twitter.component';
 import { ChartsComponent } from '../charts/charts.component';
+=======
+import { TwitterappComponent } from '../twitterapp/twitterapp.component';
+>>>>>>> 7a0be00c75931275564233ee41c51920fdbbe36f
 
 
 const routes: Routes = [
@@ -31,7 +35,11 @@ const routes: Routes = [
     { path: 'charts',  component: ChartsComponent },
     { path: 'lifecycle-hooks',  component: LifecycleHooksComponent },
     { path: 'input-output',  component: InputOutputComponent },
+<<<<<<< HEAD
     { path: 'twitter',  component: TwitterComponent },
+=======
+    { path: 'twitterapp',  component: TwitterappComponent },
+>>>>>>> 7a0be00c75931275564233ee41c51920fdbbe36f
 ];
 
 
